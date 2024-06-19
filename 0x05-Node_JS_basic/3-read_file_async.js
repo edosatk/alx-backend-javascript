@@ -16,12 +16,12 @@ async function countStudents(path) {
         result.forEach((data) => newis.push([data[0], data[3]]));
         const fields = new Set();
         newis.forEach((item) => fields.add(item[1]));
-        const final = {};
-        fields.forEach((data) => { (final[data] = 0); });
-        newis.forEach((data) => { (final[data[1]] += 1); });
+        const Final = {};
+        fields.forEach((data) => { (Final[data] = 0); });
+        newis.forEach((data) => { (Final[data[1]] += 1); });
         console.log(`Number of students: ${result.filter((check) => check.length > 3).length}`);
-        Object.keys(final).forEach((data) => console.log(`Number of students in ${data}: ${final[data]}. List: ${newis.filter((n) => n[1] === data).map((n) => n[0]).join(', ')}`));
-        resolve(result, final, newis);
+        Object.keys(Final).forEach((data) => console.log(`Number of students in ${data}: ${Final[data]}. List: ${newis.filter((n) => n[1] === data).map((n) => n[0]).join(', ')}`));
+        resolve(result, Final, newis);
       });
     });
   }
