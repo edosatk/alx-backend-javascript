@@ -1,12 +1,12 @@
 {
   "name": "0x06-unittests_in_js",
   "version": "1.0.0",
-  "description": "unit tests in js introduction",
+  "description": "unit testing",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
-  "author": "edosa",
+  "author": "edosatk",
   "license": "ISC",
   "dependencies": {
     "mocha": "^10.4.0",
