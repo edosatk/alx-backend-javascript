@@ -9,6 +9,7 @@
   "author": "edosatk",
   "license": "ISC",
   "dependencies": {
+    "chai": "^5.1.1",
     "mocha": "^10.4.0",
     "package.json": "^2.0.1"
   }
