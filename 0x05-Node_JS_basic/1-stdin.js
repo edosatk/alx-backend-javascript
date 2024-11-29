@@ -7,7 +7,7 @@ process.stdin.on('readable', function(){
 		process.stdout.write('Your name is: ' + chunk);
 	}
 });
-process.stdin.on('end', function(){
+process.on('exit', function(){
 	process.stdout.write('This important software is now closing'+'\n');
 });
 
